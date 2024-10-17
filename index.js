@@ -81,12 +81,10 @@ class TodoUI {
         this.doneListElement = doneListElement;
     }
 
-    // Обновление интерфейса
     update(tasks, doneTasks) {
         this.render(tasks, doneTasks);
     }
 
-    // Рендер задач
     render(tasks, doneTasks) {
         this.todoListElement.innerHTML = '';
         this.doneListElement.innerHTML = '';
