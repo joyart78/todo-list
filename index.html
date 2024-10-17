@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do</title>
+</head>
+<body>
+<header class="header">
+    <div class="container header__container">
+            <span class="header__title">ToDo</span>
+            <div class="new_task_form">
+                <input type="text" class="form__input" placeholder="напишите задачу...">
+                <button class="form__btn">
+                    <span class="form__btn_text">Добавить</span>
+                    <img src="./images/add_icon.svg" alt="Добавить новую задачц" class="form__btn_icon">
+                </button>
+            </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container main__container">
+        <section class="tasks">
+            <div class="tasks__statistic">
+                <span>задачи</span>
+            </div>
+            <div class="tasks__list">
+            </div>
+        </section>
+        <section class="done">
+            <div class="tasks__statistic_done">
+                <span>выполненные</span>
+                <button class="delete_done" data-action="deleteAll">
+                    <img src="./images/arrow_icon.svg" class="arrow_img">
+                    удалить
+                </button>
+            </div>
+            <div class="done__list">
+            </div>
+        </section>
+    </div>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
